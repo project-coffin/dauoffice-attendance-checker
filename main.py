@@ -56,6 +56,8 @@ def check_attendance(check_option):
         print("You already checked.")
     else:
         button.click()
+        time.sleep(WAIT_SECONDS)
+        print("Done.")
 
 ###########################
 #  main
@@ -78,3 +80,4 @@ if __name__ == "__main__":
 
     check_attendance(check_option)
     driver.close()
+    sys.exit()
